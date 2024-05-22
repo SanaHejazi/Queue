@@ -1,0 +1,7 @@
+D:\Microsoft.Visual.Studio.2022\projects\University\Queue\40130112035\QUEUE\QUEUE\bin\Debug\QUEUE.exe.config
+D:\Microsoft.Visual.Studio.2022\projects\University\Queue\40130112035\QUEUE\QUEUE\bin\Debug\QUEUE.exe
+D:\Microsoft.Visual.Studio.2022\projects\University\Queue\40130112035\QUEUE\QUEUE\bin\Debug\QUEUE.pdb
+D:\Microsoft.Visual.Studio.2022\projects\University\Queue\40130112035\QUEUE\QUEUE\obj\Debug\QUEUE.csproj.AssemblyReference.cache
+D:\Microsoft.Visual.Studio.2022\projects\University\Queue\40130112035\QUEUE\QUEUE\obj\Debug\QUEUE.csproj.CoreCompileInputs.cache
+D:\Microsoft.Visual.Studio.2022\projects\University\Queue\40130112035\QUEUE\QUEUE\obj\Debug\QUEUE.exe
+D:\Microsoft.Visual.Studio.2022\projects\University\Queue\40130112035\QUEUE\QUEUE\obj\Debug\QUEUE.pdb
