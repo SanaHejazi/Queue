@@ -6,16 +6,30 @@ namespace QUEUE
  {
   static void Main(string[] args)
   {
-   MyPriorityQueue myPriorityQueue = new MyPriorityQueue();
-   myPriorityQueue.init();
-   myPriorityQueue.EnQueue(10, 2);
-   myPriorityQueue.EnQueue(7, 1);
-   myPriorityQueue.EnQueue(9, 4);
-   myPriorityQueue.EnQueue(11, 3);
-   Console.WriteLine(myPriorityQueue.DeQueue());
-   Console.WriteLine(myPriorityQueue.DeQueue());
-   Console.WriteLine(myPriorityQueue.DeQueue());
-   Console.WriteLine(myPriorityQueue.DeQueue());
+   int[,] maze = {
+            { 0, 0, 0, 0},
+            { 0, 1, 0, 1},
+            { 0, 0, 0, 1},
+            { 0, 1, 0, 0},
+
+        };
+
+   var start = (0, 0);
+   var end = (2, 1);
+   Q1 q1 = new Q1();
+
+
+
+   int ShortPath = q1.ShortestPath(maze, start, end);
+   if (ShortPath != -1)
+   {
+    Console.WriteLine($"Shortest path length is: {ShortPath}");
+   }
+   else
+   {
+    Console.WriteLine("No Path Found Or Size Of Queue Is Not Enouth For This Maze");
+    //You Can Increase The Size Of Queue In MyQueue Class...
+   }
 
 
    Console.ReadKey();

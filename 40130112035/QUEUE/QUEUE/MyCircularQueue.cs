@@ -81,5 +81,7 @@ namespace QUEUE
    }
    return -1;
   }
+
+  public Array GetArray() { return Queue; }
  }
 }

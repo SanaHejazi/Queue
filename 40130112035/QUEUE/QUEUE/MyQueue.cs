@@ -2,7 +2,7 @@
 
 namespace QUEUE
 {
- internal class MyQueue //Impelimenting With Array MaxSize Of 10...
+ internal class MyQueue //Impelimenting With Array MaxSize Of 50...
  {
   int Front;
   int Rear;
@@ -12,7 +12,7 @@ namespace QUEUE
   {
    Front = 0;
    Rear = 0;
-   Queue = new int[10];
+   Queue = new int[50];
   }
 
   public int Max()
