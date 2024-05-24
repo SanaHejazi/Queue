@@ -40,9 +40,15 @@ namespace QUEUE
    return Front == Rear;
   }
 
+  public bool IsFull()
+  {
+   return (Rear) % Max() == Front;
+  }
+
+
   public void EnQueue(int data)
   {
-   if (Size() == Max())
+   if (IsFull() && oneway)
    {
     Console.WriteLine("Queue Is Full !");
    }

@@ -13,7 +13,7 @@ namespace QUEUE
   int index = 0;
   int size = 0;
   int Max;
-
+  bool print = false;
 
   public void EnQueu(String Word)
   {
@@ -46,8 +46,13 @@ namespace QUEUE
 
   public Char DeQueue()
   {
+   if (print)
+   {
+    Front = 0;
+   }
+
    Char Index = Queue[Front];
-   Queue[Front] = new char();
+   Queue[Front] = new char();   //Hazf Element Array
    Front++;
    return Index;
   }
@@ -63,6 +68,7 @@ namespace QUEUE
   {
    while (!IsEmpty())
    {
+    print = true;
     Console.Write(Queue[Front] + " ");
     Front++;
    }

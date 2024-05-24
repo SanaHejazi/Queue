@@ -1,4 +1,6 @@
-﻿namespace QUEUE
+﻿using System;
+
+namespace QUEUE
 {
  internal class Q1
  {
@@ -11,6 +13,7 @@
 
    if (maze[start.Item1, start.Item2] == 1 || maze[end.Item1, end.Item2] == 1)
    {
+    Console.WriteLine("Your Start Or End IS block...");
     return -1;   //If Start Or End OF The Patch Was Block...
    }
    bool[,] visited = new bool[rows, cols];

@@ -34,14 +34,12 @@
 
    while (JosephQue.Size() > 1)
    {
-    // Skip k-1 participants
-    for (int i = 0; i < k - 1; i++)
+
+    for (int i = 0; i < k - 1; i++) //Dobare To List Mirizim Vali K omin Ro Nemirizim(Hazf Mishe)...
     {
      JosephQue.EnQueue(JosephQue.DeQueue());
     }
-
-    // Eliminate the k-th participant
-    JosephQue.DeQueue();
+    JosephQue.DeQueue();  //Hazf k omin Value...
    }
 
    return JosephQue.DeQueue();

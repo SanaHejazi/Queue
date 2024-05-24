@@ -24,7 +24,7 @@ namespace QUEUE
    catch (Exception e)
    {
 
-    throw new Exception(e.Message);
+    throw new Exception("Please init Queue First");
    }
 
   }

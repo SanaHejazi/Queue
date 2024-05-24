@@ -6,31 +6,40 @@ namespace QUEUE
  {
   static void Main(string[] args)
   {
-   int[,] maze = {
-            { 0, 0, 0, 0},
-            { 0, 1, 0, 1},
-            { 0, 0, 0, 1},
-            { 0, 1, 0, 0},
+   Console.WriteLine("\n" + "Q1");
+   Q1 q1 = new Q1();
+   Q2 q2 = new Q2();
+   Q3 q3 = new Q3();
 
-        };
+   int[,] maze = {
+   { 0, 1, 0, 0},
+   { 0, 1, 0, 1},
+   { 0, 0, 0, 1},
+   { 0, 1, 0, 0},
+
+   };
 
    var start = (0, 0);
-   var end = (2, 1);
-   Q1 q1 = new Q1();
+   var end = (3, 3);
 
-
-
-   int ShortPath = q1.ShortestPath(maze, start, end);
-   if (ShortPath != -1)
+   int shortpath = q1.ShortestPath(maze, start, end);
+   if (shortpath != -1)
    {
-    Console.WriteLine($"Shortest path length is: {ShortPath}");
+    Console.WriteLine($"Shortest path length is: {shortpath}");
    }
    else
    {
-    Console.WriteLine("No Path Found Or Size Of Queue Is Not Enouth For This Maze");
-    //You Can Increase The Size Of Queue In MyQueue Class...
+    Console.WriteLine("No path found");
    }
-
+   //--------------------------------------------------------------------------
+   Console.WriteLine("\n" + "Q2");
+   Console.WriteLine(q2.Josephus(7, 3));
+   //--------------------------------------------------------------------------
+   Console.WriteLine("\n" + "Q3");
+   q3.EnQueu("ARYAN");
+   Console.WriteLine(q3.DeQueue());
+   Console.WriteLine(q3.DeQueue());
+   q3.Print(); //After Deleting
 
    Console.ReadKey();
   }

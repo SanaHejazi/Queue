@@ -34,15 +34,15 @@ namespace QUEUE
   {
    if (size == Values.Length)
    {
-    throw new InvalidOperationException("Priority Queue is full");
+    Console.WriteLine("Priority Queue is full");
    }
 
    int i;
    for (i = size - 1; i >= 0; i--)
    {
-    if (priorities[i] > priority)
+    if (priorities[i] < priority)
     {
-     Values[i + 1] = Values[i];
+     Values[i + 1] = Values[i];             //Shift Be Rast Mide Ta Bozorgtaring Arzesh Ro Dakhel khone Aval Value Bezare
      priorities[i + 1] = priorities[i];
     }
     else
@@ -59,7 +59,7 @@ namespace QUEUE
    MainQueue[Front] = Values[0];
    for (int j = 0; j < Values.Length; j++)
    {
-    if (Values[j] == 0)
+    if (Values[j] == 0)   //Dont Wasting Time In Puting zERO Value In Main Queue...
     {
      break;
     }
@@ -71,7 +71,7 @@ namespace QUEUE
   {
    if (IsEmpty())
    {
-    throw new InvalidOperationException("Priority Queue is empty");
+    Console.WriteLine("Priority Queue is empty");
    }
    else
    {
